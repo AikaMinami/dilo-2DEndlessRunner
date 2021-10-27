@@ -7,6 +7,7 @@ public class CharacterSoundController : MonoBehaviour
     public AudioClip jump;
 
     private AudioSource audioPlayer;
+    public AudioClip scoreHighlight;
 
     private void Start()
     {
@@ -16,5 +17,10 @@ public class CharacterSoundController : MonoBehaviour
     public void PlayJump()
     {
         audioPlayer.PlayOneShot(jump);
+    }
+
+    public void PlayScoreHighlight()
+    {
+        audioPlayer.PlayOneShot(scoreHighlight);
     }
 }
